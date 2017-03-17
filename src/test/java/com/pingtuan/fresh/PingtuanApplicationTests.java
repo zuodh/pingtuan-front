@@ -11,6 +11,7 @@ public class PingtuanApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.print("hello ");
 	}
 
 }
