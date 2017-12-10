@@ -1,0 +1,209 @@
+<ion-view title="'Home'">
+    <!--头部-->
+    <ion-header-bar align-title="center" class="home-page-header">
+        <h1 class="title" style="left: 0;right: 0;color: white;">
+            <span class="title-content">
+                叮叮优选</span>
+        </h1>
+
+
+        <div style="font-size: 10px;position: absolute;left: 10px;;">
+            <div style="float: right;margin-right: 10px;margin-top: 8px" ng-click="goBack()">
+                <i class="icon ion-chevron-left" style="color: white;font-size: 18px"></i>
+            </div>
+
+        </div>
+    </ion-header-bar>
+
+    <!--中间内容-->
+    <ion-content style="bottom: 63px;">
+        <tab-slide-box>
+
+            <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)" style="width: 100%">
+                <ion-slide ng-repeat="goodImg in goodsImg">
+                    <div style="position: relative;">
+                        <img ng-src="{{goodImg}}" style="width: 100%;height: 500px;">
+                        <div style="position:absolute; z-index:2; right: 20px;bottom: 20px;">{{$index +1 }} / {{goodsImg.length}}</div>
+                    </div>
+                </ion-slide>
+
+            </ion-slide-box>
+        </tab-slide-box>
+        <ion-item>
+            <div>
+                <span style="color: red;font-size: 25px;">
+                 ￥32.8
+                </span>
+                <span style="text-decoration:line-through;font-size: 18px;color: gray;">
+                    ￥45.6
+                </span>
+                <span style="color: red;font-size: 12px;border: 1px solid;border-radius: 7px;margin-left: 20px;padding: 5px">
+                    每日抢鲜
+                </span>
+            </div>
+            <div style="height: 32px;">
+                <span style="font-size: 12px;color: gray;float: left;">
+                    规格：200-400g/份
+                </span>
+                <span style="font-size: 12px;color: gray;float: right;">
+                    累计销量：100000
+                </span>
+            </div>
+            <div>
+                <span style="font-size: 12px;font-weight: 600;">
+                    【越南进口】玉芒果8斤（单果200-400克）
+                </span>
+            </div>
+            <div>
+                <span style="font-size: 12px;font-weight: 600;">
+                    【越南进口】玉芒果8斤（单果200-400克）
+                </span>
+            </div>
+            <div>
+                <span style="font-size: 12px;color: gray;">
+                    美味清新 细腻爽口
+                </span>
+            </div>
+            <div>
+                <span style="font-size: 12px;color: gray;">
+                    美味清新 细腻爽口
+                </span>
+            </div>
+            <div>
+                <span style="font-size: 12px;color: gray;">
+                    美味清新 细腻爽口
+                </span>
+            </div>
+
+        </ion-item>
+        <ion-item >
+            <div>
+                <span style="font-size: 14px;color: gray;margin-left: 10px;">
+                    全场包邮
+                </span>
+                <span style="font-size: 14px;color: gray;margin-left: 10px;">
+                    当日达
+                </span>
+                <span style="font-size: 14px;color: gray;margin-left: 10px;">
+                    闪电退款
+                </span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <div>
+                <span style="font-size: 14px;color: gray;">
+                    支持开团，并邀请
+                </span>
+                <span style="font-size: 16px;color: gray;">
+                    1
+                </span>
+                <span style="font-size: 14px;color: gray;">
+                    人参团，人数不足自动退款
+                </span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <div>
+                <span style="font-size: 14px;color: gray;">
+                    以下小伙伴正在发起团团购，您可以直接参与
+                </span>
+
+            </div>
+        </ion-item>
+
+    </ion-content>
+    <ion-content style="background: black;opacity: 0.5;z-index: 999;bottom: -60px;top: 0;" ng-show="tipDetail">
+    </ion-content>
+    <ion-content style="background: white;z-index: 9999;top: 40%;height: 60%;" ng-show="tipDetail">
+        <ion-item>
+            <img src="./img/23.jpg" style="width: 100px;height: 100px;border: 1px solid #c9c9c9;float: left;">
+            <div style="float: left;margin-left: 10px;margin-top: 20px;">
+                <div style="color: red;">
+                    ￥45.6
+                </div>
+                <div>
+                    已选择：9件套工具箱
+                </div>
+            </div>
+            <div style="font-size: 10px;left: 10px;float: right;">
+                <div ng-click="hiddenDetail()">
+                    <img src="./img/26.png" style="width: 20px;">
+                </div>
+
+
+            </div>
+        </ion-item>
+        <ion-item>
+            <div style="color: gray;margin-bottom: 10px;">款式:</div>
+            <div style="border: 1px solid #c9c9c9;float: left;border-radius: 4px;margin-left: 10px;padding: 5px;font-size: 14px " ng-class="{selectButton:selected == 1}"
+                 ng-click="selected = 1">8件套工具箱</div>
+            <div style="border: 1px solid #c9c9c9;float: left;border-radius: 4px;margin-left: 10px;padding: 5px ;font-size: 14px" ng-class="{selectButton:selected == 2}"
+                 ng-click="selected = 2">9件套工具箱</div>
+        </ion-item>
+        <ion-item>
+            <strong style="float: left;font-size: 14px">数量</strong>
+            <div style="float: right">
+                <div style="float:left;width: 28px;background: #c9c9c9;text-align: center;margin-left: 10px;" ng-click="down()">-</div>
+                <div style="float: left;width: 60px;background: #c9c9c9;text-align: center;margin-left: 10px;">{{count}}</div>
+                <div style="float:left;width: 28px;background: #c9c9c9;text-align: center;margin-left: 10px;" ng-click="up()">+</div>
+            </div>
+        </ion-item>
+
+
+
+        <div class="row">
+            <div class="col center"  >
+                <ion-item style="bottom: 0;position: absolute;width: 50%;background: red;color: white;text-align: center;" ng-click="addcarclick()" >
+                    加入购物车
+                </ion-item>
+            </div>
+            <div class="col center" >
+                <ion-item style="bottom: 0;position: absolute;width: 50%;background: green;color: white;text-align: center;" ng-click="buy()">
+                    立即购买
+                </ion-item>
+            </div>
+        </div>
+
+    </ion-content>
+
+    <ion-footer-bar align-title="center" class="bar-positive" style="background: white;height: 40px;padding: 0;">
+        <div style="width: 15%;text-align: center;color: black;border-right: 1px solid gray;" ng-click="homeclick()">
+            <div style="margin-top: 10px">
+                <i class="icon ion-home" style="color: darkgray;"></i>
+                首页
+            </div>
+        </div>
+        <div style="width: 15%;text-align: center;color: black;border-right: 1px solid gray;" ng-click="save()">
+            <div style="margin-top: 10px">
+                <i class="icon  ion-happy-outline" style="color: darkgray"></i>
+                收藏
+            </div>
+
+        </div>
+        <div style="width: 15%;text-align: center;color: black;border-right: 1px solid gray;" ng-click="message()">
+            <div style="margin-top: 10px">
+                <i class="icon ion-chatbubble-working" style="color: darkgray"></i>
+                客服
+            </div>
+        </div>
+        <div style="width: 25%;text-align: center;background: darkgray;border-right: 1px solid gray;" ng-click="showDetail()" class="center">
+            <div style="font-size: 12px;color: white;height: 15px;" class="center">
+                <span style="">￥45.6</span>
+            </div>
+            <div style="font-size: 12px;color: white;text-align: center" class="center">
+                <span style="">单人购买</span>
+            </div>
+        </div>
+        <div style="text-align: center;background: red;width: 30%;" ng-click="showDetail()">
+            <div style="font-size: 12px;color: white;height: 15px;margin-right: 10px;" class="center">
+                <span style="">￥32.8</span>
+            </div>
+            <div style="font-size: 12px;color: white;margin-right: 10px;" class="center">
+                <span style="">10人团</span>
+            </div>
+        </div>
+
+
+
+    </ion-footer-bar>
+</ion-view>

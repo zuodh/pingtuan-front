@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/css/style.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/NewProductCtrl.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/controller/allGoodsCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/bottonCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/carCtrl.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/controller/detailCtrl.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/controller/homeCtrl.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/controller/moneyCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/orderCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/directives.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/filter.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/http.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/services.js" charset="UTF-8" />
+  </component>
+</project>

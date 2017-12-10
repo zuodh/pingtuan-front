@@ -1,0 +1,64 @@
+<ion-view title="'Home'">
+    <!--头部-->
+    <ion-header-bar align-title="center" class="home-page-header">
+
+        <div style="font-size: 10px;position: absolute;left: 10px;;">
+            <div style="float: right;margin-right: 10px;">
+                <!--<img src="./img/20.png" style="width: 18px;color: white">-->
+                <div style="vertical-align: middle;color: white;margin-top: 10px">无锡</div>
+            </div>
+
+        </div>
+
+        <h1 class="title" style="left: 0;right: 0;">
+            <span class="title-content">
+                玎玎优选</span>
+        </h1>
+        <div style="font-size: 10px;position: absolute;right: 10px;;">
+            <div style="float: right;margin-right: 10px;">
+                <!--<img src="./img/20.png" style="width: 18px;color: white">-->
+                <div style="vertical-align: middle;color: white;margin-top: 10px">消息</div>
+            </div>
+
+        </div>
+        <!--<div class="buttons">-->
+        <!--<button class="button">下一页</button>-->
+        <!--</div>-->
+    </ion-header-bar>
+
+
+    <!--中间内容-->
+    <ion-content>
+
+
+        <div class="row">
+            <div class="col center" >
+                <img style="width: 15%;vertical-align: middle" src="./img/05.jpg">
+                <span style="font-size: 12px;vertical-align: middle;">上架公告</span>
+            </div>
+            <div class="col center" ng-click="goToShopping()">
+                <img style="width: 13%;vertical-align: middle" src="./img/06.jpg">
+                <span style="font-size: 12px;vertical-align: middle;">购物流程</span>
+            </div>
+            <div class="col center">
+                <img style="width: 20%;vertical-align: middle" src="./img/07.jpg">
+                <span style="font-size: 12px;vertical-align: middle;">配送范围</span>
+            </div>
+        </div>
+        <div ng-repeat="list in lists">
+            <ion-item style="padding: 0;">
+                <div>
+                    <img ng-src="{{list.url}}" style="width: 100%;height: 100%;"ng-click="gotoAllGoods()">
+                    <!--<img src="./img/08.jpg" style="width: 100%;height: 100%;"ng-click="gotoAllGoods()">-->
+                </div>
+            </ion-item>
+        </div>
+
+
+        <ion-item style="background-color: #cccccc;" ng-click="gotoAllGoods()">
+            <div class="login_content">
+                <div style="font-size: 12px;">更多好货请点击分类</div>
+            </div>
+        </ion-item>
+    </ion-content>
+</ion-view>

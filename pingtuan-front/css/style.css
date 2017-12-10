@@ -1,0 +1,115 @@
+.home-page-header{
+    background-color: #33cc99;
+}
+.center{
+    margin:0 auto;
+    text-align: center;
+}
+.title{
+    color: white;
+}
+.title .title-content{
+    font-size: 18px;
+    color: w;
+}
+.title .title-location{
+    margin-left: 10px;
+}
+.home-page-second{
+    float: right;
+    margin-right: 20px;
+}
+.login_content {
+    text-align: center;
+}
+
+.login_content div {
+    font: 400 20px Helvetica, Arial, sans-serif;
+    line-height: 20px;
+}
+
+/*CSS伪类用法*/
+.login_content div:after, .login_content div:before {
+    background: #000000;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 26%;
+}
+
+/*调整背景横线的左右距离*/
+.login_content div:before {
+    left: 10px;
+}
+
+.login_content div:after {
+    right: 10px;
+}
+.bottom-img{
+    width: 25%;
+    text-align: center;
+}
+.selectPageTab{
+    color: black;
+    margin-left: 10px;
+}
+.selected{
+    border-bottom: 2px solid red;
+    color: red;
+}
+.slider-slide h3{
+    color:#fff;
+    margin-top:10px;
+}
+.scroll{
+    height:100%;
+}
+
+.tabbed-slidebox .tsb-icons:after{
+    display:none;
+}
+.text-title{
+    margin:0 19px 4px 17px;
+    width:112px;
+    max-height:57px;
+    position: relative;
+    line-height: 20px;
+    overflow: hidden;
+    display:block;
+}
+
+.text-title:after{
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    padding:0 17px 1px 0px;
+    width:27px;
+    height:20px;
+    color:black;
+}
+.page-slide-box{
+    width: 49%;
+    float: left;
+    border: 1px solid gainsboro;
+}
+.userImg{
+    border-radius: 60px;
+    border: 1px solid gray;
+    width: 101px;
+    height: 101px;
+    text-align: center;
+    background: #eeeeee;
+    float: left;
+}
+.userText{
+    height: 100%;
+    margin-top: 40px;
+    margin-left: 29px;
+    float: left;
+    color: white;
+}
+.selectButton{
+    background: red;
+    color: white;
+}

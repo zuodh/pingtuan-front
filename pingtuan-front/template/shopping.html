@@ -1,0 +1,43 @@
+<ion-view title="'Home'">
+    <!--头部-->
+    <ion-header-bar align-title="center" class="home-page-header">
+        <h1 class="title" style="left: 0;right: 0;color: white;">
+            <span class="title-content">
+                购物流程</span>
+        </h1>
+        <div style="font-size: 10px;position: absolute;left: 10px;;">
+            <div style="float: right;margin-right: 10px;margin-top: 8px" ng-click="goBack()">
+                <i class="icon ion-chevron-left" style="color: white;font-size: 18px"></i>
+            </div>
+
+        </div>
+        <!--<div class="buttons">-->
+        <!--<button class="button">下一页</button>-->
+        <!--</div>-->
+    </ion-header-bar>
+
+    <!--中间内容-->
+    <ion-content>
+        <ion-item style="padding: 0;">
+            <div>
+                <img src="./img/21.jpg" style="width: 100%;height: 100%;">
+            </div>
+        </ion-item>
+
+    </ion-content>
+    <ion-footer-bar align-title="center" class="bar-positive" style="background: white;">
+        <div class="bottom-img">
+            <img ng-src="{{bottomImg}}" ng-click="bottomClick()" style="width: 34px;">
+        </div>
+        <div class="bottom-img">
+            <img ng-src="{{bottomImgSecond}}" ng-click="bottomClickSecond()" style="width: 34px;">
+        </div>
+        <div class="bottom-img">
+            <img ng-src="{{bottomImgThird}}" ng-click="bottomClickThird()" style="width: 34px;">
+        </div>
+        <div class="bottom-img">
+            <img ng-src="{{bottomImgFour}}" ng-click="bottomClickFour()" style="width: 34px;">
+        </div>
+
+    </ion-footer-bar>
+</ion-view>

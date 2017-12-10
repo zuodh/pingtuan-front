@@ -1,0 +1,53 @@
+<ion-view title="'Home'">
+    <!--头部-->
+    <ion-header-bar align-title="center" class="home-page-header">
+        <h1 class="title" style="left: 0;right: 0;color: white;">
+            <span class="title-content">
+                手机登录</span>
+        </h1>
+
+
+        <div style="font-size: 10px;position: absolute;left: 10px;;">
+            <div style="float: right;margin-right: 10px;margin-top: 8px" ng-click="goBack()">
+                <i class="icon ion-chevron-left" style="color: white;font-size: 18px"></i>
+            </div>
+
+        </div>
+    </ion-header-bar>
+
+    <!--中间内容-->
+    <ion-content>
+        <ion-item>
+            <div class="list">
+                <label class="item item-input" style="border: 0;">
+                    <span class="input-label" style="width: 20%;">手机号码：</span>
+                    <input type="text" ng-model="phoneNo" placeholder="请输入手机号码">
+
+                </label>
+            </div>
+        </ion-item>
+        <ion-item>
+            <label class="item item-input" style="border: 0;">
+                <span class="input-label" style="width: 20%;">验证码：</span>
+                <input type="text" ng-model="code" placeholder="请输入验证码">
+                <a class="input-label" href="" style=";border-left: 1px solid #eeeeee;color: red;text-align: center;font-size: 12px">发送验证码</a>
+            </label>
+
+        </ion-item>
+        <ion-item style="background: #eeeeee;padding: 5px;">
+            </ion-item>
+        <ion-item style="border: 0">
+            <div class="padding">
+                <button class="button button-block button-positive" style="    background-color: red;">登录</button>
+            </div>
+            <div>
+                <input type="checkbox" ng-model="yes">
+                <span style="font-size: 12px">我已阅读并同意</span>
+                <a href="" style="color: red;font-size: 12px;">叮叮服务协议</a>
+            </div>
+        </ion-item>
+        <!--<form action="">-->
+        <!--<input class="age" type="number" ng-model="views.age"/>-->
+        <!--</form>-->
+    </ion-content>
+</ion-view>

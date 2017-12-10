@@ -1,0 +1,577 @@
+<ion-view title="'Home'">
+    <!--头部-->
+    <ion-header-bar align-title="center" class="home-page-header">
+        <h1 class="title" style="left: 0;right: 0;color: white;">
+            <span class="title-content">
+                水果生鲜</span>
+        </h1>
+        <div style="font-size: 10px;position: absolute;left: 10px;;">
+            <div style="float: right;margin-right: 10px;margin-top: 8px" ng-click="goBack()">
+                <i class="icon ion-chevron-left" style="color: white;font-size: 18px"></i>
+            </div>
+
+        </div>
+        <!--<div class="buttons">-->
+        <!--<button class="button">下一页</button>-->
+        <!--</div>-->
+    </ion-header-bar>
+
+    <div class="bar bar-subheader" style="overflow-x:scroll">
+        <div class="tsb-icons">
+            <div class="tsb-ic-wrp">
+                <ion-scroll direction="x" class="tsb-hscroll" style="overflow: hidden;height: 24px;width: 100%;">
+                    <a  class="selectPageTab" ng-class="{selected:selectedOne == '全部'}" ng-click="slideHasChanged(0)">全部</a>
+                    <a class="selectPageTab" ng-class="{selected:selectedOne == onePage}"  ng-repeat="onePage in allPage"
+                       ng-click="slideHasChanged($index+1)">{{onePage}}</a>
+                </ion-scroll>
+            </div>
+        </div>
+
+    </div>
+
+    <!--中间内容-->
+    <ion-content scroll="true">
+        <tab-slide-box>
+
+            <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)" style="width: 100%;margin-top: 10px">
+                <ion-slide>
+                    <ion-item>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                    </ion-item>
+
+                </ion-slide>
+                <ion-slide>
+                    <ion-item>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+
+                    </ion-item>
+                </ion-slide>
+                <ion-slide>
+                    <ion-item>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 50%;font-size: 14px" >
+                                【越南进口】新鲜越南青芒果
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;font-size: 12px"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+
+                    </ion-item>
+                </ion-slide>
+                <ion-slide>
+                    <ion-item>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                3【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+
+                    </ion-item>
+                </ion-slide>
+                <ion-slide>
+                    <ion-item>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                4【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                5【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+
+                    </ion-item>
+                </ion-slide>
+                <ion-slide>
+                    <ion-item>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+
+                    </ion-item>
+                </ion-slide>
+                <ion-slide>
+                    <ion-item>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+
+                    </ion-item>
+                </ion-slide>
+                <ion-slide>
+                    <ion-item>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+
+                    </ion-item>
+                </ion-slide>
+                <ion-slide>
+                    <ion-item>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;margin-left: 10px;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;margin-right: 10px;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+                        <div class="page-slide-box"  ng-click="gotoGoodDetail()">
+                            <img src="./img/23.jpg" style="width: 100%;">
+                            <div style="width: 100%;text-overflow: ellipsis;overflow: hidden;" >
+                                【越南进口】新鲜越南青芒果5斤（单果200~400g）dskjdskjkdsjjdsbvj
+                                </span>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <div style="color: red;float: left;">
+                                    <span style="font-size: 10px;">￥</span><span>44</span>
+                                </div>
+                                <div style="float: right;color: gray;"><span>已团</span><span>100</span><span>件</span></div>
+                            </div>
+                        </div>
+
+                    </ion-item>
+                </ion-slide>
+            </ion-slide-box>
+        </tab-slide-box>
+    </ion-content>
+</ion-view>

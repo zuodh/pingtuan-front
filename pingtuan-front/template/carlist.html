@@ -1,0 +1,68 @@
+<ion-view title="'Home'">
+    <!--头部-->
+    <ion-header-bar align-title="center" class="home-page-header">
+        <h1 class="title" style="left: 0;right: 0;color: white;">
+            <span class="title-content">
+                购物车</span>
+        </h1>
+
+        <div style="font-size: 10px;position: absolute;right: 10px;;" ng-click="buy()">
+            <div style="float: right;margin-right: 10px;">
+                <!--<img src="./img/20.png" style="width: 18px;color: white">-->
+                <div style="vertical-align: middle;color: red;margin-top: 10px">去结算</div>
+            </div>
+
+        </div>
+    </ion-header-bar>
+
+
+    <!--中间内容-->
+    <ion-content>
+
+       <ion-list>
+           <ion-item ng-click="gotoGoodDetail()">
+               <img src="./img/23.jpg" style="width: 100px;height: 100px;float: left;">
+
+               <div style="float: left;margin-left: 10px;margin-top: 20px;">
+
+                   <strong style="color: black;margin-top: 5px;margin-left: 0px">
+                       越南芒果[夏季特供]
+                   </strong>
+
+                   <div style="color: red;margin-top: 0px">
+                       ￥45.6
+                   </div>
+                   <strong style="font-size: 12px">
+                       已选择：9件套工具箱
+                   </strong>
+
+               </div>
+
+           </ion-item>
+
+           <ion-item ng-click="gotoGoodDetail()">
+               <img src="./img/23.jpg" style="width: 100px;height: 100px;float: left;">
+
+               <div style="float: left;margin-left: 10px;margin-top: 20px;">
+
+                   <strong style="color: black;margin-top: 5px;margin-left: 0px">
+                       海南芒果[夏季特供]
+                   </strong>
+
+                   <div style="color: red;margin-top: 0px">
+                       ￥45.6
+                   </div>
+                   <strong style="font-size: 12px">
+                       已选择：9件套工具箱
+                   </strong>
+
+               </div>
+
+           </ion-item>
+
+
+
+
+       </ion-list>
+    </ion-content>
+</ion-view>
