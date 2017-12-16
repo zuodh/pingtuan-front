@@ -16,8 +16,8 @@ app.controller("homeCtrl", ['$scope', 'myFactory', '$state', '$rootScope', funct
         /*
          * name 获取数据列表
          * */
-        getList: function () {
-            myFactory.getList().then(function(data){
+        getHomeList: function () {
+            myFactory.getHomeList().then(function(data){
                 $scope.lists=data;
             },function(err){
                 console.log(err)
@@ -81,6 +81,6 @@ app.controller("homeCtrl", ['$scope', 'myFactory', '$state', '$rootScope', funct
         $scope.bottomImgThird = './img/17.png';
         $scope.bottomImgFour = './img/18.png';
     };
-    $scope.views.getList(); // 执行方法
+    $scope.views.getHomeList(); // 执行方法
 
 }]);

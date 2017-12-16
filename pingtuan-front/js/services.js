@@ -12,12 +12,13 @@ angular.module('myApp.services', [])
         var factory = {};
         var storage = {};
 
-        factory.getList = function () {
+        factory.getHomeList = function () {
             console.log(window.location.host)
 
             return myHttp.send({
-                url:'http://'+ window.location.host+'/ngIonicDemo/js/data/getList.json',
-                method: "GET",
+                //url:'http://'+ window.location.host+'/ngIonicDemo/js/data/getList.json',
+                url:'http://127.0.0.1:8088/home/getProductCategory',
+                type: "GET",
             });
 
         };
